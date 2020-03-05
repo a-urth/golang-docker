@@ -1,5 +1,7 @@
 FROM golang:1.14-alpine3.11
 
+RUN apk add build-base
+
 RUN apk add --no-cache \
 		ca-certificates \
 # DOCKER_HOST=ssh://... -- https://github.com/docker/cli/pull/1014
