@@ -12,4 +12,6 @@ RUN apt-get update && \
     apt-get autoremove --assume-yes && \
     apt-get clean
 
+COPY bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+
 ENTRYPOINT ["docker-entrypoint.sh"]
